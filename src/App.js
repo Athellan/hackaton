@@ -4,6 +4,10 @@ import FacebookIcon from "./assets/fb.png";
 import InstaIcon from "./assets/inst.png";
 import TwitterIcon from "./assets/tw.png";
 import LightMode from "./assets/Vector.png";
+import Cubes from "./assets/cubes.png";
+import Gus from "./assets/gus.png";
+import Astro from "./assets/astro.png";
+import Arrow from "./assets/arrow.png";
 
 function App() {
   return (
@@ -32,6 +36,7 @@ function App() {
         </div>
       </div>
       {/* End Left Band */}
+
       {/* Start Nav */}
       <div className="nav">
         <h3 className="nav__options">Home</h3>
@@ -41,6 +46,37 @@ function App() {
         <img src={LightMode} alt="" className="nav__mode" />
       </div>
       {/* End Nav */}
+
+      {/* Start Cubes + Astro */}
+      <div className="wallpaper">
+        <div className="wallpaper__title">
+          <h1>Adventure Together</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat id
+            potenti faucibus nec, rhoncus, vulputate vitae. Dictum rutrum ut
+            cras nullam porta id dolor arcu, quis.
+          </p>
+        </div>
+        <img className="wallpaper__cubes" src={Cubes} alt="" />
+        <img className="wallpaper__gus" src={Gus} alt="" />
+      </div>
+      {/* End Cubes + Astro */}
+
+      {/* Start Bottom Banner */}
+      <div className="bottom__banner">
+        <img src={Astro} alt="astronautre" className="bottom__banner-image" />
+        <div className="bottom__banner-content">
+          <h2>Exploration</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat id
+            potenti faucibus nec, rhoncus, vulputate
+          </p>
+        </div>
+        <div className="bottom__banner-arrow">
+          <img src={Arrow} alt="arrow" />
+        </div>
+      </div>
+      {/* End Bottom Banner */}
     </div>
   );
 }
